@@ -4,6 +4,7 @@ h2 {
 	color: brown;
 }
 
+/*  button-1 */
 .button {
 	display: inline-block;
 	border-radius: 4px;
@@ -39,4 +40,38 @@ h2 {
 .button:hover span::after {
 	opacity: 1;
 	right: 0;
+}
+
+/*button-2*/
+.button-2 {
+	position: relative;
+	background-color: #4caf50;
+	border: none;
+	font-size: 28px;
+	color: #fff;
+	padding: 20px;
+	width: 200px;
+	text-align: center;
+	transition-duration: 0.4s;
+	text-decoration: none;
+	overflow: hidden;
+	cursor: pointer;
+}
+.button-2::after {
+	content: "";
+	display: block;
+	position: absolute;
+	background-color: #f1f1f1;
+	padding-top: 300%;
+	padding-left: 350%;
+	margin-left: -20px !important;
+	margin-top: -120%;
+	opacity: 0;
+	transition: all 0.8s;
+}
+.button-2:active:after {
+	padding: 0;
+	margin: 0;
+	opacity: 1;
+	transition: 0s;
 }
